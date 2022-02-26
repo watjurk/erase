@@ -47,7 +47,7 @@ func (s status) String() string {
 	return str
 }
 
-func erase(rootPath string) <-chan status {
+func Erase(rootPath string) <-chan status {
 	statusChan := make(chan status)
 
 	var absolutePathStatus *status

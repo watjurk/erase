@@ -35,7 +35,7 @@ func main() {
 		ok = true
 	}
 
-	statusChan := erase(rootPath)
+	statusChan := Erase(rootPath)
 	for status := range statusChan {
 		fmt.Println(status)
 	}
